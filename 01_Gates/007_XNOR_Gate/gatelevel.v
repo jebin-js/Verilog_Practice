@@ -1,4 +1,4 @@
-module nand_gate (
+module xnor_gate(
 
 input a,
 input b,
@@ -6,7 +6,8 @@ output y
 
 );
 
-nand (y, a, b);
+xnor(y, a, b);
 
 endmodule
+
 

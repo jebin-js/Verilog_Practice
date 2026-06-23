@@ -1,4 +1,4 @@
-module nand_gate (
+module nor_gate (
 
 input a,
 input b,
@@ -6,7 +6,6 @@ output y
 
 );
 
-nand (y, a, b);
+nor (y, a, b);
 
 endmodule
-
