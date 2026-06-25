@@ -1,0 +1,50 @@
+$date
+	Thu Jun 25 11:30:39 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_half_subtractor $end
+$var wire 1 ! D $end
+$var wire 1 " B0 $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var integer 32 % i [31:0] $end
+$scope module DUT $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var reg 1 " B0 $end
+$var reg 1 ! D $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+0$
+0#
+0"
+0!
+$end
+#20
+1"
+1!
+1$
+b1 %
+#40
+0"
+1#
+0$
+b10 %
+#60
+0!
+1$
+b11 %
+#80
+b100 %

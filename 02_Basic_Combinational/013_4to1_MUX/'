@@ -1,0 +1,32 @@
+module tb_mux_4to1;
+
+reg a;
+reg b;
+reg c;
+reg d;
+reg s1;
+reg s2;
+
+wire y;
+
+mux_4to1 DUT (.a(a), .b(b), .c(c), .d(d), .s1(s1), .s2(s2), .y(y));
+
+initial begin 
+
+$dumpfile ("mux_4to1.vcd");
+$dumpvars (0, tb_mux_4to1);
+
+$monitor ("Time = %0t | a = %b | b = %b | c = %b | d = %b | s1 = %b | s2 = %b | y = %b", $time, a, b, c, d, s1, s2, y);
+
+for(i = 0; i < 64 < i = i+1)
+
+begin
+{a, b, c, d, s1, s2} = i;
+#20;
+end 
+
+$finish;
+
+end 
+
+endmodule
