@@ -1,0 +1,120 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x58f80b56db50 .scope module, "tb_demux_1to4" "tb_demux_1to4" 2 1;
+ .timescale 0 0;
+v0x58f80b583850_0 .var "a", 0 0;
+v0x58f80b583910_0 .var/i "i", 31 0;
+v0x58f80b5839d0_0 .var "s1", 0 0;
+v0x58f80b583ad0_0 .var "s2", 0 0;
+v0x58f80b583ba0_0 .net "w", 0 0, v0x58f80b583420_0;  1 drivers
+v0x58f80b583c90_0 .net "x", 0 0, v0x58f80b5834e0_0;  1 drivers
+v0x58f80b583d60_0 .net "y", 0 0, v0x58f80b5835f0_0;  1 drivers
+v0x58f80b583e30_0 .net "z", 0 0, v0x58f80b5836b0_0;  1 drivers
+S_0x58f80b56dce0 .scope module, "DUT" "demux_1to4" 2 14, 3 1 0, S_0x58f80b56db50;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "s1";
+    .port_info 2 /INPUT 1 "s2";
+    .port_info 3 /OUTPUT 1 "w";
+    .port_info 4 /OUTPUT 1 "x";
+    .port_info 5 /OUTPUT 1 "y";
+    .port_info 6 /OUTPUT 1 "z";
+v0x58f80b55d030_0 .net "a", 0 0, v0x58f80b583850_0;  1 drivers
+v0x58f80b5832c0_0 .net "s1", 0 0, v0x58f80b5839d0_0;  1 drivers
+v0x58f80b583380_0 .net "s2", 0 0, v0x58f80b583ad0_0;  1 drivers
+v0x58f80b583420_0 .var "w", 0 0;
+v0x58f80b5834e0_0 .var "x", 0 0;
+v0x58f80b5835f0_0 .var "y", 0 0;
+v0x58f80b5836b0_0 .var "z", 0 0;
+E_0x58f80b56b0e0 .event anyedge, v0x58f80b5832c0_0, v0x58f80b583380_0, v0x58f80b55d030_0;
+    .scope S_0x58f80b56dce0;
+T_0 ;
+    %wait E_0x58f80b56b0e0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58f80b583420_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58f80b5834e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58f80b5835f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58f80b5836b0_0, 0, 1;
+    %load/vec4 v0x58f80b5832c0_0;
+    %load/vec4 v0x58f80b583380_0;
+    %concat/vec4; draw_concat_vec4
+    %cmpi/e 0, 0, 2;
+    %jmp/0xz  T_0.0, 4;
+    %load/vec4 v0x58f80b55d030_0;
+    %store/vec4 v0x58f80b583420_0, 0, 1;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x58f80b5832c0_0;
+    %load/vec4 v0x58f80b583380_0;
+    %concat/vec4; draw_concat_vec4
+    %cmpi/e 1, 0, 2;
+    %jmp/0xz  T_0.2, 4;
+    %load/vec4 v0x58f80b55d030_0;
+    %store/vec4 v0x58f80b5834e0_0, 0, 1;
+    %jmp T_0.3;
+T_0.2 ;
+    %load/vec4 v0x58f80b5832c0_0;
+    %load/vec4 v0x58f80b583380_0;
+    %concat/vec4; draw_concat_vec4
+    %cmpi/e 2, 0, 2;
+    %jmp/0xz  T_0.4, 4;
+    %load/vec4 v0x58f80b55d030_0;
+    %store/vec4 v0x58f80b5835f0_0, 0, 1;
+    %jmp T_0.5;
+T_0.4 ;
+    %load/vec4 v0x58f80b5832c0_0;
+    %load/vec4 v0x58f80b583380_0;
+    %concat/vec4; draw_concat_vec4
+    %cmpi/e 3, 0, 2;
+    %jmp/0xz  T_0.6, 4;
+    %load/vec4 v0x58f80b55d030_0;
+    %store/vec4 v0x58f80b5836b0_0, 0, 1;
+T_0.6 ;
+T_0.5 ;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x58f80b56db50;
+T_1 ;
+    %vpi_call 2 18 "$dumpfile", "demux_1to4.vcd" {0 0 0};
+    %vpi_call 2 19 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x58f80b56db50 {0 0 0};
+    %vpi_call 2 21 "$monitor", "Time = %0t | a = %b | s1 = %b | s2 = %b | w = %b | x = %b | y = %b | z = %b", $time, v0x58f80b583850_0, v0x58f80b5839d0_0, v0x58f80b583ad0_0, v0x58f80b583ba0_0, v0x58f80b583c90_0, v0x58f80b583d60_0, v0x58f80b583e30_0 {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x58f80b583910_0, 0, 32;
+T_1.0 ;
+    %load/vec4 v0x58f80b583910_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_1.1, 5;
+    %load/vec4 v0x58f80b583910_0;
+    %pad/s 3;
+    %split/vec4 1;
+    %store/vec4 v0x58f80b583850_0, 0, 1;
+    %split/vec4 1;
+    %store/vec4 v0x58f80b583ad0_0, 0, 1;
+    %store/vec4 v0x58f80b5839d0_0, 0, 1;
+    %delay 10, 0;
+    %load/vec4 v0x58f80b583910_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x58f80b583910_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %vpi_call 2 32 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_1to4_DEMUX.v";
+    "behavioural.v";
