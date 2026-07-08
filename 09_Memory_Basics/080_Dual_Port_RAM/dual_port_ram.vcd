@@ -1,0 +1,235 @@
+$date
+	Mon Jul  6 10:43:26 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_dual_port_ram $end
+$var wire 4 ! data_out_b [3:0] $end
+$var wire 4 " data_out_a [3:0] $end
+$var reg 3 # address_a [2:0] $end
+$var reg 3 $ address_b [2:0] $end
+$var reg 1 % clk_a $end
+$var reg 1 & clk_b $end
+$var reg 4 ' data_in_a [3:0] $end
+$var reg 4 ( data_in_b [3:0] $end
+$var reg 1 ) we_a $end
+$var reg 1 * we_b $end
+$var integer 32 + i [31:0] $end
+$scope module DUT $end
+$var wire 3 , address_a [2:0] $end
+$var wire 3 - address_b [2:0] $end
+$var wire 1 % clk_a $end
+$var wire 1 & clk_b $end
+$var wire 4 . data_in_a [3:0] $end
+$var wire 4 / data_in_b [3:0] $end
+$var wire 1 ) we_a $end
+$var wire 1 * we_b $end
+$var reg 4 0 data_out_a [3:0] $end
+$var reg 4 1 data_out_b [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx 1
+bx 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+1*
+1)
+b0 (
+b0 '
+0&
+0%
+b0 $
+b0 #
+bx "
+bx !
+$end
+#5
+1%
+#7
+1&
+#10
+b1 +
+b1 '
+b1 .
+0%
+#14
+b10 +
+b1010 (
+b1010 /
+b1 $
+b1 -
+0&
+#15
+1%
+#20
+b11 +
+b11 '
+b11 .
+b10 #
+b10 ,
+0%
+#21
+1&
+#25
+1%
+#28
+b100 +
+b1100 (
+b1100 /
+b11 $
+b11 -
+0&
+#30
+b101 +
+b101 '
+b101 .
+b100 #
+b100 ,
+0%
+#35
+1%
+1&
+#40
+b110 +
+b110 '
+b110 .
+b101 #
+b101 ,
+0%
+#42
+b111 +
+b1111 (
+b1111 /
+b110 $
+b110 -
+0&
+#45
+1%
+#49
+1&
+#50
+b1000 +
+b1000 '
+b1000 .
+b111 #
+b111 ,
+0%
+#55
+1%
+#56
+0*
+0)
+b0 +
+b1 (
+b1 /
+b0 $
+b0 -
+0&
+#60
+b1 +
+b0 #
+b0 ,
+0%
+#63
+b1 !
+b1 1
+1&
+#65
+b1 "
+b1 0
+1%
+#70
+b10 #
+b10 ,
+b11 +
+b1 $
+b1 -
+0%
+0&
+#75
+b11 "
+b11 0
+1%
+#77
+b1010 !
+b1010 1
+1&
+#80
+b100 +
+b11 #
+b11 ,
+0%
+#84
+b101 +
+b100 $
+b100 -
+0&
+#85
+b1100 "
+b1100 0
+1%
+#90
+b110 +
+b101 #
+b101 ,
+0%
+#91
+b101 !
+b101 1
+1&
+#95
+b110 "
+b110 0
+1%
+#98
+b111 +
+b110 $
+b110 -
+0&
+#100
+b1000 +
+b111 #
+b111 ,
+0%
+#105
+b1000 "
+b1000 0
+b1111 !
+b1111 1
+1%
+1&
+#110
+0%
+#112
+b1001 +
+b0 $
+b0 -
+0&
+#115
+1%
+#119
+b1 !
+b1 1
+1&
+#120
+0%
+#125
+1%
+#126
+0&
+#130
+0%
+#132

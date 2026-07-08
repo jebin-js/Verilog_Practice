@@ -1,0 +1,50 @@
+$date
+	Tue Jul  7 10:12:42 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_and_gate $end
+$var wire 8 ! y [7:0] $end
+$var parameter 32 " width $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$scope module DUT $end
+$var wire 8 % a [7:0] $end
+$var wire 8 & b [7:0] $end
+$var wire 8 ' y [7:0] $end
+$var parameter 32 ( width $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 (
+b1000 "
+$end
+#0
+$dumpvars
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 !
+$end
+#10
+b1 $
+b1 &
+#20
+b0 $
+b0 &
+b1 #
+b1 %
+#30
+b1 !
+b1 '
+b1 $
+b1 &
+#240

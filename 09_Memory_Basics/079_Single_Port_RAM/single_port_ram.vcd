@@ -1,0 +1,188 @@
+$date
+	Mon Jul  6 08:14:48 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_single_port_ram $end
+$var wire 4 ! data_out [3:0] $end
+$var reg 3 " address [2:0] $end
+$var reg 1 # clk $end
+$var reg 4 $ data_in [3:0] $end
+$var reg 1 % we $end
+$var integer 32 & i [31:0] $end
+$scope module DUT $end
+$var wire 3 ' address [2:0] $end
+$var wire 1 # clk $end
+$var wire 4 ( data_in [3:0] $end
+$var wire 1 % we $end
+$var reg 4 ) data_out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx )
+b0 (
+b0 '
+b0 &
+1%
+b0 $
+0#
+b0 "
+bx !
+$end
+#5
+1#
+#10
+b1 &
+b1 $
+b1 (
+0#
+#15
+1#
+#20
+b10 &
+b10 $
+b10 (
+b1 "
+b1 '
+0#
+#25
+1#
+#30
+b11 &
+b11 $
+b11 (
+b10 "
+b10 '
+0#
+#35
+1#
+#40
+b100 &
+b100 $
+b100 (
+b11 "
+b11 '
+0#
+#45
+1#
+#50
+b101 &
+b101 $
+b101 (
+b100 "
+b100 '
+0#
+#55
+1#
+#60
+b110 &
+b110 $
+b110 (
+b101 "
+b101 '
+0#
+#65
+1#
+#70
+b111 &
+b111 $
+b111 (
+b110 "
+b110 '
+0#
+#75
+1#
+#80
+b1000 &
+b1000 $
+b1000 (
+b111 "
+b111 '
+0#
+#85
+b0 &
+0%
+1#
+#90
+b1 &
+b0 "
+b0 '
+0#
+#95
+b1 !
+b1 )
+1#
+#100
+b10 &
+b1 "
+b1 '
+0#
+#105
+b10 !
+b10 )
+1#
+#110
+b11 &
+b10 "
+b10 '
+0#
+#115
+b11 !
+b11 )
+1#
+#120
+b100 &
+b11 "
+b11 '
+0#
+#125
+b100 !
+b100 )
+1#
+#130
+b101 &
+b100 "
+b100 '
+0#
+#135
+b101 !
+b101 )
+1#
+#140
+b110 &
+b101 "
+b101 '
+0#
+#145
+b110 !
+b110 )
+1#
+#150
+b111 &
+b110 "
+b110 '
+0#
+#155
+b111 !
+b111 )
+1#
+#160
+b1000 &
+b111 "
+b111 '
+0#
+#165
+bx !
+bx )
+1#
+#170
+0#

@@ -1,0 +1,52 @@
+$date
+	Wed Jul  1 06:30:11 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_sr_latch $end
+$var wire 1 ! q_bar $end
+$var wire 1 " q $end
+$var reg 1 # r $end
+$var reg 1 $ s $end
+$var integer 32 % i [31:0] $end
+$scope module DUT $end
+$var wire 1 # r $end
+$var wire 1 $ s $end
+$var reg 1 " q $end
+$var reg 1 ! q_bar $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+0$
+0#
+x"
+x!
+$end
+#10
+0"
+1!
+1#
+b1 %
+#20
+1"
+0!
+1$
+0#
+b10 %
+#30
+x"
+x!
+1#
+b11 %
+#40
+b100 %

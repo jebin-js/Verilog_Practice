@@ -37,3 +37,4 @@ full_adder fa3 (.a(a[3]), .b(b[3]), .cin(w3), .sum(sum[3]), .carry(carry));
 
 endmodule
 
+

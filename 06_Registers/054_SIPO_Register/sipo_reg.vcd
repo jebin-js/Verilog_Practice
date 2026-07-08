@@ -1,0 +1,110 @@
+$date
+	Fri Jul  3 04:00:47 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_sipo_reg_4bit $end
+$var wire 4 ! q [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # rst $end
+$var reg 1 $ serial_in $end
+$var integer 32 % i [31:0] $end
+$scope module UUT $end
+$var wire 1 " clk $end
+$var wire 1 # rst $end
+$var wire 1 $ serial_in $end
+$var reg 4 & q [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx &
+bx %
+x$
+x#
+0"
+bx !
+$end
+#5
+b0 !
+b0 &
+0$
+1#
+1"
+#10
+0"
+#15
+1"
+b0 %
+0#
+#20
+0"
+#25
+b1 !
+b1 &
+1"
+1$
+b1 %
+#30
+0"
+#35
+b10 !
+b10 &
+1"
+0$
+b10 %
+#40
+0"
+#45
+b101 !
+b101 &
+1"
+1$
+b11 %
+#50
+0"
+#55
+b1010 !
+b1010 &
+1"
+0$
+b100 %
+#60
+0"
+#65
+b101 !
+b101 &
+1"
+1$
+b101 %
+#70
+0"
+#75
+b1010 !
+b1010 &
+1"
+0$
+b110 %
+#80
+0"
+#85
+b101 !
+b101 &
+1"
+1$
+b111 %
+#90
+0"
+#95
+b1011 !
+b1011 &
+1"
+b1000 %
